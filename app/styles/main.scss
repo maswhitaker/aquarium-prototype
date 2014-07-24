@@ -7,8 +7,111 @@
 #wrapper{
   @include outer-container;
 
-  h1{
+  #title{
+    text-align: center;
+    font-size: 40px;
     font-family: Chelsea Market;
-    font-size: 2em;
+    border-bottom: solid dashed blue;
+  }
+
+  #chelsea-font{
+    font-family: Chelsea Market;
+    padding: 20px 20px 20px 20px;
+    border: solid black 1px;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    @include span-columns(6);
+  }
+
+  #news-font{
+    font-family: News Cycle;
+    padding: 10px 20px 10px 20px;
+    float: right;
+    border: solid black 1px;
+    text-align: center;
+    border-radius: 5px;
+    @include span-columns(6);
+  }
+}
+
+#second-wrapper{
+  @include outer-container;
+  font-family: News Cycle;
+
+  #lists{
+    border: solid black 1px;
+    border-radius: 5px;
+    text-align: center;
+    @include span-columns(6);
+  }
+
+  #ol-list{
+    border: solid black 1px;
+    border-radius: 5px;
+    text-align: center;
+    @include span-columns(6);
+  }
+}
+
+#links{
+  font-family: News Cycle;
+  padding: 20px 20px 20px 20px;
+  border: solid black 1px;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 35px;
+  @include span-columns(10);
+
+  a{
+    text-decoration: none;
+  }
+}
+
+#third-wrapper{
+  @include outer-container;
+  border: solid black 1px;
+  text-align: center;
+
+  #color1{
+    @include span-columns(1.75);
+    height: 100px;
+    background-color: #063260;
+    margin: 10px 10px 10px 40px;
+  }
+
+  #color2{
+    @include span-columns(1.75);
+    height: 100px;
+    background-color: #13587F;
+    margin: 10px 10px 10px 10px;
+  }
+
+  #color3{
+    @include span-columns(1.75);
+    height: 100px;
+    background-color: #1F80B7;
+    margin: 10px 10px 10px 10px;
+  }
+
+  #color4{
+    @include span-columns(1.75);
+    height: 100px;
+    background-color: #2B9AB9;
+    margin: 10px 10px 10px 10px;
+  }
+
+  #color5{
+    @include span-columns(1.75);
+    height: 100px;
+    background-color: #89C6EC;
+    margin: 10px 10px 10px 10px;
+  }
+
+  #color6{
+    @include span-columns(1.75);
+    height: 100px;
+    background-color: #C5E287;
+    margin: 10px 10px 10px 10px;
   }
 }
